@@ -3,16 +3,18 @@
 ## DESIGN CHOICE & EBNF GRAMMAR SPECIFICATION
 
 ### Design Choice
-TinyC is an imperative language which has small features of C language. But it has its specifications.
+TinyC is an imperative language that has small features of C language. But it has its specifications.
+
 
 ## How to use the project:
 It is simple to use:
 
 ### Requirements
-The only requirement for this project is Swift Language and its compiler.
+The only requirement for this project is Swift Language and its compiler. For Windows operating systems at least Windows 10 is required.
 
-To install and use Swift language Please follow the below instructions:
+### Installation & Usage
 
+To install and use the Swift programming language Please follow the below instructions:
 #### MAC OS:
 *** Swift Installation ***
 Download and install Xcode with the following links: 
@@ -30,7 +32,7 @@ There are two ways to run this application in Mac OS:
 Download swift language from this link:
 https://download.swift.org/swift-5.8-branch/windows10/swift-5.8-DEVELOPMENT-SNAPSHOT-2023-01-09-a/swift-5.8-DEVELOPMENT-SNAPSHOT-2023-01-09-a-windows10.exe
 The installation will be like other Windows applications. It does not require any special dependencies.
-For confirmation of successful installation use the below command: 
+To confirm the successful installation of Swift use the below command: 
 `swift --version`
 
 After Download and Installation, throw the command line tool to open your project directory.
@@ -40,9 +42,18 @@ The below commands will help you to build and run the project.
     - `swift run`
 
 #### Linux OS:
-You can download the Swift language with the below commands and Follow the instructions:
-- ` sudo apt-get update `
-- ` sudo apt-get install swift `
+
+Download link: https://www.swift.org/download/
+After successful download, open the directory in which you have downloaded the file. Extract the file from the interface or use the below command:
+` sudo tar xzf {your file name with extensions} `
+Then move it to the "usr/share/swift" directory:
+`sudo mv {extracted_folder_name} /usr/share/swift`
+The last step is to add it to the PATH variable:
+` echo "export PATH=/usr/share/swift/usr/bin:$PATH` >> ~/.bashrc
+The below command will help you with using the project:
+
+    - `swift build`
+    - `swift run`
 
 
 
