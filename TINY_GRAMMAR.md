@@ -1,6 +1,6 @@
 # TINYC Language Grammar Documentation
 ## Introduction
-This documentation outlines the grammar specification for the TINYC programming language. TINYC is a simplified variant of the C programming language designed for educational purposes. The grammar rules provided below define the syntax of TINYC.
+This documentation outlines the grammar specification for the TINYC programming language. TINYC has similarities with the C programming language but has its own rules and regulations. The grammar rules provided below define the syntax of TINYC.
 
 ## Grammar Notations
 The following notations and operators are used in this grammar specification:
@@ -17,6 +17,7 @@ The following notations and operators are used in this grammar specification:
 ### Program Structure
 `<Program>`: Represents a complete TINYC program.<br>
 `<Functions>`: Represents a sequence of function declarations.<br>
+`<MainMethod>`: Represents the declaration of the main method.<br>
 `<FunctionDeclaration>`: Defines the structure of a function, including its return type, name, parameters, and body.<br>
 ### Types and Declarations
 `<ReturnType>`: Represents the return type of a function, which can be a supported data type or void.<br>
@@ -53,7 +54,7 @@ The following notations and operators are used in this grammar specification:
 `<Symbol>`: Represents special symbols used in TINYC.<br>
 
 ## Design Choices
-The TINYC grammar follows a subset of C's syntax while introducing simplifications for educational purposes. Notable design choices include:
+Based on the given instructions the TINYC grammar supports the design choices below:
 
 **Return Type and void:** Functions can have a supported return type but not void.<br>
 **Empty Function Blocks:** Empty function blocks are not allowed; each function must have a non-void return.<br>
@@ -62,6 +63,8 @@ The TINYC grammar follows a subset of C's syntax while introducing simplificatio
 **Main Function:** The entry point is defined as int main().<br>
 **Declaration and Assignment:** All variables must be declared before any assignment.<br>
 **No Global Variables:** Global variables are not supported in TINYC.<br>
+
+
 
 ## Grammar
 `<Program>` ::= `<MainMethod> <Functions>`<br>
