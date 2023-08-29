@@ -92,13 +92,13 @@ Key objectives of the TinyParser include:
 The overall code works in three files Main.swift, TinyTokenizer.swift, and TinyParser.swift.
 
 #### main.swift:
-this file serves as the entry point for the Swift application. This is where the execution of the program starts. It typically contains the main function or code that initializes and runs the application. main.swift likely includes code that reads input, tokenizes it using the TinyTokenizer, and then parses the tokens using the TinyParser. Depending on the parsed results, it executes further processing or displays relevant information to the user.
+This file serves as the entry point for the Swift application. This is where the execution of the program starts. It contains the main function or code that initializes and runs the application. main.swift includes code that reads input, tokenizes it using the TinyTokenizer, and then parses the tokens using the TinyParser. Depending on the parsed results, it executes further processing or displays relevant information to the user.
 
 #### TinyTokenizer.swift: 
-This file breaks down the input source code into individual tokens. Tokens are the smallest meaningful units in your programming language, such as keywords, identifiers, operators, literals, and symbols. The TinyTokenizer scans through the source code and identifies these tokens, categorizing each token into its appropriate type (keyword, identifier, operator, etc.). It then generates a list of tokens that the TinyParser can use to analyze the structure of the code.
+This file breaks down the input source code into individual tokens. Tokens are the smallest meaningful units in your programming language, such as keywords, identifiers, operators, literals, and symbols. The TinyTokenizer scans through the source code and identifies these tokens, categorizing each token into its appropriate type (keyword, identifier, etc.). It then generates a list of tokens that the TinyParser can use to analyze the structure of the code.
 
 #### TinyParser.swift:
-TinyParser.swift is the heart of the project. It implements the parser for the simplified programming language. The parser analyzes the list of tokens provided by the TinyTokenizer and performs various checks, including syntax validation, semantic analysis, type checking, control flow analysis, and more. It follows the grammar rules of the language to validate the input program. The parser also handles various language constructs like function declarations, assignments, expressions, conditionals, and loops.
+TinyParser.swift is the heart of the project. It implements the parser for the programming language base on the grammar. The parser analyzes the list of tokens provided by the TinyTokenizer and performs various checks, including syntax validation, semantic analysis, type checking, control flow analysis, and more. It follows the grammar rules of the language to validate the input program. The parser also handles various language constructs like function declarations, assignments, expressions, conditionals, and loops.
 #### functions.swift:
 This is a part of TinyParser that handles related operations for functions.
 #### declaration.swift:
