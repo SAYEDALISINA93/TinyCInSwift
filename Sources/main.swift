@@ -3,8 +3,7 @@ import Foundation
 
  let inputCode1 = """
  int main() {
-     int x;
-     x = 10;
+     int x = 10;
      return 0;
   }
  """;
@@ -72,11 +71,22 @@ import Foundation
  int main(){ int x = 3; return 0; }
  """
 
-let inputCode8 = """
+let inputCode81 = """
 int main () {
 int a, b, c;
 a = 65535; b = 2;
 c = a + b; return c;
+}
+"""
+
+let inputCode8 = """
+int main(){
+int a[10],i;
+i = 10;
+while(i>0){
+a[i] = i;
+}
+return 0;
 }
 """
 
